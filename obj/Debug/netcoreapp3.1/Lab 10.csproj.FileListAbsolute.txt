@@ -1,0 +1,36 @@
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.exe
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.deps.json
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.runtimeconfig.json
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.runtimeconfig.dev.json
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.dll
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.pdb
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.Views.dll
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\bin\Debug\netcoreapp3.1\Lab 10.Views.pdb
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.csprojAssemblyReference.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.RazorAssemblyInfo.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.RazorAssemblyInfo.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.AssemblyInfoInputs.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.AssemblyInfo.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.TagHelpers.input.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.TagHelpers.output.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.RazorCoreGenerate.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.RazorTargetAssemblyInfo.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.RazorTargetAssemblyInfo.cs
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.Views.pdb
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\staticwebassets\Lab 10.StaticWebAssets.Manifest.cache
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\staticwebassets\Lab 10.StaticWebAssets.xml
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.dll
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.pdb
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Lab 10.csproj.CopyComplete
+C:\Users\Walker\Documents\Projects\Adv Bus Programming\Lab 10\obj\Debug\netcoreapp3.1\Razor\Pages\lab10.cshtml.g.cs
