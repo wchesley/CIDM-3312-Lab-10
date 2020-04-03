@@ -24,6 +24,57 @@
 - Log an information message inside your `OnPost()` method that will print out “OnPost() Called”. 
 - Filter out all the Microsoft logs like you did in Lab 9 so that only your log message is displayed. 
 - Run your project, fill out the form, and hit submit. Verify that the log message is displayed to the console. 
-- If the message is not displayed, it’s time to debug. Otherwise, great work! 
+-5 If the message is not displayed, it’s time to debug. Otherwise, great work! 
 ### Round 5: Finishing Up 
 - Save all your code and submit your project to WTClass. **Due Date: 3/31 by 11:00 PM CDT**
+
+# Lab 10 Part 2 – Model Binding 
+### Round 0: Prepare Your Environment 
+- Open Lab 10 Part 1 in Visual Studio Code.  
+### Round 1: Model Binding Server-Side Part 
+Model binding links data in the web page (frontend or client-side) to C# variables in your model (backend or server-side). Your goal is to connect the data that the user inputs in your form to your page model. 
+- Your form has text boxes for First Name and Last Name. Create a `FirstName` property and a `LastName` property in your Page Model class (the `.cshtml.cs` file) 
+- Add the `[BindProperty]` decorators to your properties. It is this line of code that sets up the model binding. Your code should look like this: 
+``` csharp
+[BindProperty]
+public string FristName {get; set;}
+```
+### Round 2: Model Binding Client-Side Part 
+- Open the Razor Page (the `.cshtml` file). Use tag helpers to link the `<label>` and `<input>` tags to your C# properties you created in Round 1. 
+  - The tag helper you will use is `asp-for="PropertyName"`. PropertyName should match the exact name of the C# property  (e.g. `asp-for="FirstName"`). 
+- Delete the text between the `<label>` opening and closing tags. The `asp-for` tag helper automates writing that text. 
+- Run your project. Click view source in the web browser and see what the HTML code looks like now with the tag helpers. 
+### Round 3: Verify 
+- We added logging last time. Change the log message in `OnPost()` to print out the content of the `FirstName` and `LastName` properties. 
+- Run your project again and confirm that those properties are being set correctly. 
+### Round 4: Bring it Back Around 
+- Add code to your Razor Page that will display the contents of the `FirstName` and `LastName` properties back on the webpage. Remember how to display C# variables in Razor Pages? 
+- Run your project again and take a look. 
+### Round 5: Data Annotations 
+You may have noticed that the labels for your textboxes say “FirstName” and “LastName” now with no spaces. The `asp-for` tag helper pulls the exact variable name as the label name. Usually we don’t want that.  
+- Add the following using directives to enable Data Annotations:
+``` csharp  
+using System.ComponentModel.DataAnnotations; 
+using System.ComponentModel.DataAnnotations.Schema;
+```
+- Add a Data Annotation to your properties on the page model right below `[BindProperty]: [Display(Name = "First Name")]` 
+- Run your project again and take a look. 
+### Round 6: Data Validation 
+Data Validation requires two parts – data annotations on the server side that specify the validation rules and tag helpers on the client side to enforce the rules. 
+- Open your razor page (`.cshtml` file) and add the following HTML after the `<input>` tag for each textbox. Change "FirstName" to match the proper variable name. `<span asp-validation-for="FirstName" class="text-danger"></span>` 
+- Bring in the JS code to perform the validation. At the bottom of your razor page add the following: 
+``` csharp
+@section Scripts {     
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} 
+  }
+```
+- Add the `[Required]` and `[StringLength]` validation rules to your page model (the `.cshtml.cs` file). 
+- Run your project and test it out. 
+### Round 7: Data Validation Challenge 
+Visit https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation for examples and other validation rules you can use. 
+- On your form, add an input tag (text box) for a credit card number. 
+- Review the previous rounds in this lab and write all the required code for the credit card number following the example for FirstName.  
+- Give the credit card number the proper data validation rules. Follow the example from Round 6 but use credit card validation rules. 
+- The website at https://www.paypalobjects.com/en_AU/vhelp/paypalmanager_help/credit_card_numbers.htm  has sample credit card numbers. Verify that your validation rules work properly. 
+### Round 8: Finishing Up 
+- Save and submit your project to WTClass.
