@@ -10,11 +10,16 @@
         <p>Shut up baby, I know it.</p>
         <form method="POST">
             <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
+            <input type="text" id="fname" name="fname" asp-for="fname">
+            <span asp-validation-for="fname" class="text-danger"></span><br><br>
             <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit" class="btn btn-primary">
+            <input type="text" id="lname" name="lname" asp-for="lname">
+            <span asp-validation-for="lname" class="text-danger"></span><br><br>
+            <label for="CCnum">Credit Card Number:</label>
+            <input type="text" id="CCnum" name="CCnum" asp-for="CCnum">
+            <span asp-validation-for="CCnum" class="text-danger"></span><br><br>
         </form>
+        <p>@ViewData["name"]</p>
     </div>
     <div class="col-lg-9">
         <img src="images/bender.png" max-width="300" height="300">
@@ -25,3 +30,6 @@
     <div class="col-sm-6 border">Go</div>
     <div class="col-sm-4 border">ALREADY!!!!</div>
 </div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
