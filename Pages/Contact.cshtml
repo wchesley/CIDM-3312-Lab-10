@@ -1,0 +1,36 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Homework 5";
+}
+<h1>Homework 5</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <p>Shut up baby, I know it.</p>
+        <form method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" asp-for="name">
+            <span asp-validation-for="name" class="text-danger"></span><br><br>
+            <label for="email">Last name:</label>
+            <input type="text" id="email" name="email" asp-for="email">
+            <span asp-validation-for="email" class="text-danger"></span><br><br>
+            <label for="msg">Message:</label>
+            <textarea class="form-control" id="msg" asp-for="msg"></textarea>
+            <span asp-validation-for="msg" class="text-danger"></span><br><br>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+        <p>@ViewData["name"]</p>
+    @* </div>
+    <div class="col-lg-9">
+        <img src="images/bender.png" max-width="300" height="300">
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2 border">Let's</div>
+    <div class="col-sm-6 border">Go</div>
+    <div class="col-sm-4 border">ALREADY!!!!</div>
+</div> *@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

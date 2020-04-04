@@ -10,28 +10,30 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lab_10.Pages
 {
-    public class lab10Model : PageModel
+    public class ContactModel : PageModel
     {
         [BindProperty]
+        [Display(Name = "Name")]
         [Required]
         [StringLength(16)]
-        public string fname {get; set;}
+        public string name {get; set;}
 
 
         [BindProperty]
+        [Display(Name = "Email")]
         [Required]
-        [StringLength(16)]
-        public string lname {get; set;}
+        [EmailAddress]
+        public string email {get; set;}
 
         [BindProperty]
+        [Display(Name = "Message")]
         [Required]
-        [CreditCard]
-        public string CCnum {get; set;}
+        public string msg {get; set;}
 
 
         private readonly ILogger<IndexModel> _logger;
 
-        public lab10Model(ILogger<IndexModel> logger)
+        public ContactModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }
@@ -43,8 +45,8 @@ namespace Lab_10.Pages
 
         public void OnPost()
         {
-            _logger.LogInformation($"OnPost() called\nfname: {fname}\nlname: {lname}\n {CCnum}");
-            ViewData["name"] = fname + " " + lname;
+            _logger.LogInformation($"OnPost() called\n name: {name}\nemail: {email}\n {msg}");
+            ViewData["name"] = $"Thank you for your message! {name} ({email}):\n{msg}";
         }
     }
 }
